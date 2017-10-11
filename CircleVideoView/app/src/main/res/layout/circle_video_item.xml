@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+
+    <RelativeLayout
+    android:layout_marginTop="20px"
+    android:layout_marginBottom="10px"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/rlBelow"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+        >
+
+
+        <TextView
+            android:id="@+id/visibility_percents"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            style="@style/BaseText"/>
+
+
+        <ImageView
+            android:id="@+id/cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:layout_centerInParent="true"
+            />
+        <com.volokh.danylo.video_player_manager.ui.VideoPlayerView
+            android:id="@+id/player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <com.linekong.video.circlevideoview.FrescoCirclePicCoverView
+            android:id="@+id/frescoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/title"
+        android:layout_marginTop="10px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Video.MP4"
+        android:textSize="35px"
+        android:layout_marginRight="10px"
+        android:textColor="@android:color/black"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@null"
+        />
+    <Button
+        android:id="@+id/mTvWifiLoad"
+        android:layout_width="1px"
+        android:layout_height="1px"
+        android:text="点击下载高清"
+        android:textSize="1px"
+        android:visibility="invisible"
+        android:textColor="@android:color/black"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10px"
+        android:layout_below="@id/title"
+        android:background="@null"
+        />
+</RelativeLayout>
